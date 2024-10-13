@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Preencha o formulário</h1>
+    <p>Preencha as informações do formulário abaixo:</p>
+    <form>
+        <fieldset>
+            <div>
+                <label>Nome:</label>
+                <input type="text" name="nome" id="nome" required>
+            </div>
+
+            <div>
+                <label>Sobrenome:</label>
+                <input type="text" name="sobrenome" id="sobrenome">
+            </div>
+
+            <div>
+                <label>E-mail:</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+
+            <div>
+                <label>Selecione qual lado da aplicação vc desenvolve:</label>
+                <label>
+                    <input type="radio" name="devweb" value="frontend" checked>Front-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="backend">Back-end
+                </label>
+                <label>
+                    <input type="radio" name="devweb" value="fullstack">FullStack
+                </label>
+            </div>
+
+            <div>
+                <label>Senioridade:</label>
+                <select id="senioridade">
+                        <option selected disabled value="">Selecione seu cargo</option>
+                        <option>Junior</option>
+                        <option>Pleno</option>
+                        <option>Senior</option>
+                </select>
+            </div>
+        </fieldset>
+		
+		<br>
+
+            <fieldset>
+                <div>
+                    <label>Selecione sua área de conhecimento:</label><br>
+                        <input type="checkbox" id="tec1" nome"tec1" value="HTML">
+                        <label for="tec1">HTML</label>
+                        <input type="checkbox" id="tec2" nome"tec2" value="CSS">
+                        <label for="tec2">CSS</label>
+                        <input type="checkbox" id="tec3" nome"tec3" value="Java">
+                        <label for="tec3">Java</label>
+                        <input type="checkbox" id="tec4" nome"tec4" value="Python">
+                        <label for="tec4">Python</label>
+                        <input type="checkbox" id="tec5" nome"tec5" value="Javascript">
+                        <label for="tec5">Javascript</label>
+                </div>
+            </fieldset>
+
+            <div>
+                <br>
+                <label>Conte um pouco da sua história de vida:</label>
+                <br>
+                <textarea rows="6" style="width: 50%" id"exp" name"exp"></textarea>
+            </div>
+
+            <button type="submit">Clique aqui para enviar</button>
+    </form>
+</body>
+</html>

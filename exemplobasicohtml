@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Título que vai aparecer na aba</title>
+<link rel="icon" type="image/x-icon" href="nomedaimagem.jpg">
+</head>
+<body>
+<body style="background-color:blue;">
+<h1> Título maior de todos...</h1>
+<h2>título um pouco menor</h2>
+<h3>título bem menor</h3>
+<h4>título menor de todos</h4>
+<p>Texto do primeiro parágrafo</p>
+<p>Texto do segundo parágrafo</p>
+<a href= "https://www.google.com">Para mais dúvidas, acesse esse site... </a>
+<br>
+<img src="nomedaimagem.jpg" alt="texto descritivo da imagem "style="width:200px">
+</body>
+</html>

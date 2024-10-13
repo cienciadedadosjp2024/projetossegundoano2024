@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa com médias das notas</title>
+</head>
+<body>
+    <h1>Cálculo de média das notas em JavaScript</h1>
+    <h1>Soma entre dois valores</h1>
+    Digite o nome completo do Aluno: <input type="text" name="txtname" id="txtname"> 
+    <br>
+    Digite a primeira nota:<input type="number" name="txtn1" id="txtn1"> 
+    <br>
+    Digite a segunda nota:<input type="number" name="txtn2" id="txtn2">
+    <br>  
+    Digite a terceira nota:<input type="number" name="txtn3" id="txtn3">
+    <br> 
+    Digite a quarta nota:<input type="number" name="txtn4" id="txtn4"> 
+    <br> 
+    <input type="button" value="Calcular Média Final" onclick="calcularmedia()">
+    <div id="res">
+    </div>
+    <script>
+        function calcularmedia() {
+            var txtnomealuno = window.document.getElementById('txtname')
+            var nomealuno =String(txtnomealuno.value)
+            var txtnota1 = window.document.getElementById('txtn1')
+            var n1 = Number(txtnota1.value)
+            var txtnota2 = window.document.getElementById('txtn2')
+            var n2= Number(txtnota2.value)
+            var txtnota3 = window.document.getElementById('txtn3')
+            var n3= Number(txtnota3.value)
+            var txtnota4 = window.document.getElementById('txtn4')
+            var n4= Number(txtnota4.value)
+            var res = window.document.getElementById('res')
+            var media = ((n1 + n2 + n3 + n4)/4)
+
+            if ((n1 < 0 || n1 > 10.0) || (n2 < 0 || n2 > 10.0) || (n3 < 0 || n3 > 10.0) || (n4 < 0 || n4 > 10.0)) {
+            res.innerHTML = `<p> Valor da média é inválido, por favor, insira uma nota que não seja maior que 10.0 e nem menor do que 0 (zero).</p>`
+            } else {
+            res.innerHTML = `<p>A média do aluno ${nomealuno} é igual à ${media}</p>`
+            }
+
+            if (media < 7.0) {
+            res.innerHTML += `<p>REPROVADO</p>`
+            } else {
+            res.innerHTML += `<p>APROVADO</p>`
+            }
+        }
+    </script>
+</body>
+</html>

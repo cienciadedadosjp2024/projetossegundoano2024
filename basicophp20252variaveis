@@ -1,0 +1,17 @@
+<body>
+<?php
+        $varnum = 2027;
+        $varnome = "Adair Wolff";
+        $varpeso = 107.65;
+        $aprovado = true;
+        $nota = 8.0;
+
+        echo $varnum;
+        echo "<h2>Olá mundo...</h2>";
+        echo "<h2>O número escolhido é $varnum</h2>";
+        echo "<h2>O nome do cliente é $varnome.</h2>";
+        echo "<h2>O peso é $varpeso.</h2>";
+        echo "<h2>O aluno foi aprovado $aprovado.</h2>"; 
+        echo "<h2>O valor da nota é $nota.</h2>"; 
+    ?>
+</body>
